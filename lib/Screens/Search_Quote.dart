@@ -20,7 +20,10 @@ class _SearchQuoteState extends State<SearchQuote> {
     return Scaffold(
       body:
       Stack(children: [
-        Image.asset("assets/background2.png",fit: BoxFit.fill,),
+        Image.asset("assets/background2.png",fit: BoxFit.fill,
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+        ),
         SafeArea(
           child: Center(
             child: Column(

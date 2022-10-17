@@ -22,7 +22,10 @@ class _intro_pageState extends State<intro_page> {
 
         body:
         Stack(children: [
-        Container(child: Image.asset("assets/background1.png",fit: BoxFit.fill,)),
+        Container(child: Image.asset("assets/background1.png",fit: BoxFit.fill,
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+        )),
         SafeArea(
           child: Container(
             margin: EdgeInsets.only(left: 20, right: 20),
